@@ -1,0 +1,16 @@
+{
+  "emp_details": [
+    {
+      "emp_name": "Fred",
+      "emp_number" : 77
+    },
+    {
+      "emp_name": "Bob",
+      "emp_number" : 44
+    },
+    {
+      "emp_name": "Sally",
+      "emp_number" : 257
+    }
+  ]
+}

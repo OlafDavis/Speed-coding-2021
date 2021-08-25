@@ -1,16 +1,15 @@
-# This is a sample Python script.
+from file_handling import *
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    print("json:")
+    data = read_json('files/test_data.json')
+    for i in data['emp_details']:
+        print(i)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print("text:")
+    text = read_text('files/test_data.json')
+    print(text)
+
+    print("lines:")
+    lines = read_lines('files/test_data.json')
+    print(lines)
